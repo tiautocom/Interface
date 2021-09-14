@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{222E088E-A800-4922-96B5-A6470D43B3D6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SAT</RootNamespace>
+    <AssemblyName>SAT</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>SAT.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net35\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAviso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAviso.Designer.cs">
+      <DependentUpon>frmAviso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAvisoProibido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAvisoProibido.Designer.cs">
+      <DependentUpon>frmAvisoProibido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBandeiras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBandeiras.Designer.cs">
+      <DependentUpon>frmBandeiras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarCep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarCep.Designer.cs">
+      <DependentUpon>frmBuscarCep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadCliente.Designer.cs">
+      <DependentUpon>frmCadCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCancelarItemVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCancelarItemVenda.Designer.cs">
+      <DependentUpon>frmCancelarItemVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCancelarUltimaVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCancelarUltimaVenda.Designer.cs">
+      <DependentUpon>frmCancelarUltimaVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCliente.Designer.cs">
+      <DependentUpon>frmCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfiguracaoNFCe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfiguracaoNFCe.Designer.cs">
+      <DependentUpon>frmConfiguracaoNFCe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfiguracoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfiguracoes.Designer.cs">
+      <DependentUpon>frmConfiguracoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCpfCnpj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCpfCnpj.Designer.cs">
+      <DependentUpon>frmCpfCnpj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDadosXmlNumCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDadosXmlNumCaixa.Designer.cs">
+      <DependentUpon>frmDadosXmlNumCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFechamentoCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFechamentoCaixa.Designer.cs">
+      <DependentUpon>frmFechamentoCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFechamentoVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFechamentoVenda.Designer.cs">
+      <DependentUpon>frmFechamentoVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListarCancelarItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListarCancelarItem.Designer.cs">
+      <DependentUpon>frmListarCancelarItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListarProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListarProduto.Designer.cs">
+      <DependentUpon>frmListarProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoginUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoginUsuario.Designer.cs">
+      <DependentUpon>frmLoginUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMsgSat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMsgSat.Designer.cs">
+      <DependentUpon>frmMsgSat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNFCeLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNFCeLogin.Designer.cs">
+      <DependentUpon>frmNFCeLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmParametro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmParametro.Designer.cs">
+      <DependentUpon>frmParametro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPesquisarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPesquisarCliente.Designer.cs">
+      <DependentUpon>frmPesquisarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPlaca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPlaca.Designer.cs">
+      <DependentUpon>frmPlaca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSangriaDespesas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSangriaDespesas.Designer.cs">
+      <DependentUpon>frmSangriaDespesas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSistema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSistema.Designer.cs">
+      <DependentUpon>frmSistema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTipoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipoUsuario.Designer.cs">
+      <DependentUpon>frmTipoUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuarioConfiguracao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuarioConfiguracao.Designer.cs">
+      <DependentUpon>frmUsuarioConfiguracao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVenda.Designer.cs">
+      <DependentUpon>frmVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoginConfiguracao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoginConfiguracao.Designer.cs">
+      <DependentUpon>frmLoginConfiguracao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVendaXmlSat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVendaXmlSat.Designer.cs">
+      <DependentUpon>frmVendaXmlSat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAviso.resx">
+      <DependentUpon>frmAviso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAvisoProibido.resx">
+      <DependentUpon>frmAvisoProibido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBandeiras.resx">
+      <DependentUpon>frmBandeiras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarCep.resx">
+      <DependentUpon>frmBuscarCep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadCliente.resx">
+      <DependentUpon>frmCadCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCancelarItemVenda.resx">
+      <DependentUpon>frmCancelarItemVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCancelarUltimaVenda.resx">
+      <DependentUpon>frmCancelarUltimaVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCliente.resx">
+      <DependentUpon>frmCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfiguracaoNFCe.resx">
+      <DependentUpon>frmConfiguracaoNFCe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfiguracoes.resx">
+      <DependentUpon>frmConfiguracoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCpfCnpj.resx">
+      <DependentUpon>frmCpfCnpj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDadosXmlNumCaixa.resx">
+      <DependentUpon>frmDadosXmlNumCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFechamentoCaixa.resx">
+      <DependentUpon>frmFechamentoCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFechamentoVenda.resx">
+      <DependentUpon>frmFechamentoVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListarCancelarItem.resx">
+      <DependentUpon>frmListarCancelarItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListarProduto.resx">
+      <DependentUpon>frmListarProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoginUsuario.resx">
+      <DependentUpon>frmLoginUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMsgSat.resx">
+      <DependentUpon>frmMsgSat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNFCeLogin.resx">
+      <DependentUpon>frmNFCeLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmParametro.resx">
+      <DependentUpon>frmParametro.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPesquisarCliente.resx">
+      <DependentUpon>frmPesquisarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPlaca.resx">
+      <DependentUpon>frmPlaca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSangriaDespesas.resx">
+      <DependentUpon>frmSangriaDespesas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSistema.resx">
+      <DependentUpon>frmSistema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipoUsuario.resx">
+      <DependentUpon>frmTipoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuarioConfiguracao.resx">
+      <DependentUpon>frmUsuarioConfiguracao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVenda.resx">
+      <DependentUpon>frmVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoginConfiguracao.resx">
+      <DependentUpon>frmLoginConfiguracao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVendaXmlSat.resx">
+      <DependentUpon>frmVendaXmlSat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IMPRESSORA\IMPRESSORA.csproj">
+      <Project>{07B70935-7451-4F7D-BD18-5CA8280B8677}</Project>
+      <Name>IMPRESSORA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OBJETO_TRANSFERENCIA\OBJETO_TRANSFERENCIA.csproj">
+      <Project>{8E55EDB2-AB90-4806-B074-7A2AF59CCB41}</Project>
+      <Name>OBJETO_TRANSFERENCIA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\REGRA_NEGOCIOS\REGRA_NEGOCIOS.csproj">
+      <Project>{4B6EEE40-490E-4E17-BBC7-21B3FBE11A41}</Project>
+      <Name>REGRA_NEGOCIOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TRIBUTOS_XML\TRIBUTOS_XML.csproj">
+      <Project>{075e2787-8f5d-428a-810b-60b0ac44ebde}</Project>
+      <Name>TRIBUTOS_XML</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\impressora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\impressora1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pencil-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\import-export-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\import-export-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flag-red-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flag-green-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cash-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\credit-cards-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checks-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\62926-card-index-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-Files-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vw-beetle-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\um-computador-a-casa-o-quarto-1515999.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nfce.png" />
+    <None Include="Resources\unnamed2.png" />
+    <None Include="Resources\nfce1.png" />
+    <None Include="Resources\nfce-consulta-996x498.jpg" />
+    <None Include="Resources\nfce2.png" />
+    <None Include="Resources\unnamed3.png" />
+    <None Include="Resources\download.jpg" />
+    <Content Include="SAT.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

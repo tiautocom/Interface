@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{37AF1AC3-BE1C-4989-88FC-0F854D8B7929}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CONTROLE.OTICA</RootNamespace>
+    <AssemblyName>CONTROLE.OTICA</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAlterarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlterarPedido.Designer.cs">
+      <DependentUpon>frmAlterarPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadCliente.Designer.cs">
+      <DependentUpon>frmCadCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadProduto.Designer.cs">
+      <DependentUpon>frmCadProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClienteDetalhes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClienteDetalhes.Designer.cs">
+      <DependentUpon>frmClienteDetalhes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEntrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEntrada.Designer.cs">
+      <DependentUpon>frmEntrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEntradaProdutoXml.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEntradaProdutoXml.Designer.cs">
+      <DependentUpon>frmEntradaProdutoXml.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListarClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListarClientes.Designer.cs">
+      <DependentUpon>frmListarClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPedido.Designer.cs">
+      <DependentUpon>frmPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPedidoSaida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPedidoSaida.Designer.cs">
+      <DependentUpon>frmPedidoSaida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPesquisarClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPesquisarClientes.Designer.cs">
+      <DependentUpon>frmPesquisarClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProdutos.Designer.cs">
+      <DependentUpon>frmProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelatorioEstoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelatorioEstoque.Designer.cs">
+      <DependentUpon>frmRelatorioEstoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSaida.Designer.cs">
+      <DependentUpon>frmSaida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaidaPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSaidaPedido.Designer.cs">
+      <DependentUpon>frmSaidaPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAlterarPedido.resx">
+      <DependentUpon>frmAlterarPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadCliente.resx">
+      <DependentUpon>frmCadCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadProduto.resx">
+      <DependentUpon>frmCadProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClienteDetalhes.resx">
+      <DependentUpon>frmClienteDetalhes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEntrada.resx">
+      <DependentUpon>frmEntrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEntradaProdutoXml.resx">
+      <DependentUpon>frmEntradaProdutoXml.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListarClientes.resx">
+      <DependentUpon>frmListarClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPedido.resx">
+      <DependentUpon>frmPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPedidoSaida.resx">
+      <DependentUpon>frmPedidoSaida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPesquisarClientes.resx">
+      <DependentUpon>frmPesquisarClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProdutos.resx">
+      <DependentUpon>frmProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelatorioEstoque.resx">
+      <DependentUpon>frmRelatorioEstoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSaida.resx">
+      <DependentUpon>frmSaida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSaidaPedido.resx">
+      <DependentUpon>frmSaidaPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-user-group-new-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\name-card-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-Files-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mail-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whatsapp-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OBJETO_TRANSFERENCIA\OBJETO_TRANSFERENCIA.csproj">
+      <Project>{8E55EDB2-AB90-4806-B074-7A2AF59CCB41}</Project>
+      <Name>OBJETO_TRANSFERENCIA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\REGRA_NEGOCIOS\REGRA_NEGOCIOS.csproj">
+      <Project>{4b6eee40-490e-4e17-bbc7-21b3fbe11a41}</Project>
+      <Name>REGRA_NEGOCIOS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modelo-universal-de-receita-de-oculos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adobe-PDF-Document-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-report-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\credit-cards-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-report-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File-Open-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File-Delete-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Files-New-File-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alarm-Error-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\floppy-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-user-group-new-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-user-group-new-icon %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-view-list-details-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Misc-Delete-Database-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-user-group-new-icon %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-report-icon %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clothing-Glasses-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Finance-Invoice-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modelo-universal-de-receita-de-oculos2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\credit-cards-icon %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\credit-cards-icon %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-report-icon %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-view-calendar-list-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Misc-Delete-Database-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adobe-PDF-Document-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clothing-Glasses-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-form-icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

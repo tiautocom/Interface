@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8E55EDB2-AB90-4806-B074-7A2AF59CCB41}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OBJETO_TRANSFERENCIA</RootNamespace>
+    <AssemblyName>OBJETO_TRANSFERENCIA</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CABECALHO.cs" />
+    <Compile Include="ClienteC.cs" />
+    <Compile Include="COFINS.cs" />
+    <Compile Include="CSOSN.cs" />
+    <Compile Include="DepartamentoC.cs" />
+    <Compile Include="Destinatario.cs" />
+    <Compile Include="Emitente.cs" />
+    <Compile Include="EMPRESA.cs" />
+    <Compile Include="Endereco.cs" />
+    <Compile Include="FECHAMENTO_DIA.cs" />
+    <Compile Include="FORMA_PAGAMENTOS.cs" />
+    <Compile Include="Medico.cs" />
+    <Compile Include="NFe.cs" />
+    <Compile Include="NumCaixaC.cs" />
+    <Compile Include="PagamentoVendaC.cs" />
+    <Compile Include="PAGAMENTO_VENDA.cs" />
+    <Compile Include="ParametroC.cs" />
+    <Compile Include="Pedido.cs" />
+    <Compile Include="PedidoSaida.cs" />
+    <Compile Include="Pessoa.cs" />
+    <Compile Include="PIS.cs" />
+    <Compile Include="PlacaC.cs" />
+    <Compile Include="ProdutoC.cs" />
+    <Compile Include="ProdutoTributos.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Relatorio.cs" />
+    <Compile Include="SangriaC.cs" />
+    <Compile Include="Setor.cs" />
+    <Compile Include="SoftwareHouse.cs" />
+    <Compile Include="Telefone.cs" />
+    <Compile Include="TempC.cs" />
+    <Compile Include="TipoPagamentoC.cs" />
+    <Compile Include="TipoUsuarioC.cs" />
+    <Compile Include="TipoUsuarioRegraNegocios.cs" />
+    <Compile Include="FILTRAR.cs" />
+    <Compile Include="Transporte.cs" />
+    <Compile Include="TRIBUTOS.cs" />
+    <Compile Include="Unidade.cs" />
+    <Compile Include="Url.cs" />
+    <Compile Include="UsuarioC.cs" />
+    <Compile Include="VendaC.cs" />
+    <Compile Include="VendaChaveAcesso.cs" />
+    <Compile Include="VendaFechamento.cs" />
+    <Compile Include="VendaFechamentoItem.cs" />
+    <Compile Include="VendaIcms.cs" />
+    <Compile Include="VENDAS.cs" />
+    <Compile Include="VENDA_DETALHES.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ACESSO_DADOS\ACESSO_DADOS.csproj">
+      <Project>{0846D58E-3991-4076-9833-C4B4418E3F11}</Project>
+      <Name>ACESSO_DADOS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

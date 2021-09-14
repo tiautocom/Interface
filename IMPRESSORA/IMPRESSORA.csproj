@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{07B70935-7451-4F7D-BD18-5CA8280B8677}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IMPRESSORA</RootNamespace>
+    <AssemblyName>IMPRESSORA</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BemasatImpressora.cs" />
+    <Compile Include="BematechImpressora.cs" />
+    <Compile Include="DarumaImpressora.cs" />
+    <Compile Include="ElginImpressora.cs" />
+    <Compile Include="Enums\Justifications.cs" />
+    <Compile Include="Enums\PrinterModeState.cs" />
+    <Compile Include="Enums\PrinterType.cs" />
+    <Compile Include="Enums\QrCodeSize.cs" />
+    <Compile Include="EscBemaCommands\Alignment.cs" />
+    <Compile Include="EscBemaCommands\BarCode.cs" />
+    <Compile Include="EscBemaCommands\Drawer.cs" />
+    <Compile Include="EscBemaCommands\EscBema.cs" />
+    <Compile Include="EscBemaCommands\FontMode.cs" />
+    <Compile Include="EscBemaCommands\FontWidth.cs" />
+    <Compile Include="EscBemaCommands\InitializePrint.cs" />
+    <Compile Include="EscBemaCommands\PaperCut.cs" />
+    <Compile Include="EscBemaCommands\QrCode.cs" />
+    <Compile Include="EscDarumaCommands\Alignment.cs" />
+    <Compile Include="EscDarumaCommands\BarCode.cs" />
+    <Compile Include="EscDarumaCommands\Drawer.cs" />
+    <Compile Include="EscDarumaCommands\EscDaruma.cs" />
+    <Compile Include="EscDarumaCommands\FontMode.cs" />
+    <Compile Include="EscDarumaCommands\FontWidth.cs" />
+    <Compile Include="EscDarumaCommands\InitializePrint.cs" />
+    <Compile Include="EscDarumaCommands\PaperCut.cs" />
+    <Compile Include="EscDarumaCommands\QrCode.cs" />
+    <Compile Include="EscPosElgin.cs" />
+    <Compile Include="EscPosCommands\Alignment.cs" />
+    <Compile Include="EscPosCommands\BarCode.cs" />
+    <Compile Include="EscPosCommands\Drawer.cs" />
+    <Compile Include="EscPosCommands\EscPos.cs" />
+    <Compile Include="EscPosCommands\FontMode.cs" />
+    <Compile Include="EscPosCommands\FontWidth.cs" />
+    <Compile Include="EscPosCommands\InitializePrint.cs" />
+    <Compile Include="EscPosCommands\PaperCut.cs" />
+    <Compile Include="EscPosCommands\QrCode.cs" />
+    <Compile Include="Extensions\PrinterExtensions.cs" />
+    <Compile Include="Helper\RawPrinterHelper.cs" />
+    <Compile Include="ImpressoraC.cs" />
+    <Compile Include="InterfaceEpsonNF.cs" />
+    <Compile Include="Interfaces\Command\IAlignment.cs" />
+    <Compile Include="Interfaces\Command\IBarCode.cs" />
+    <Compile Include="Interfaces\Command\IDrawer.cs" />
+    <Compile Include="Interfaces\Command\IFontMode.cs" />
+    <Compile Include="Interfaces\Command\IFontWidth.cs" />
+    <Compile Include="Interfaces\Command\IInitializePrint.cs" />
+    <Compile Include="Interfaces\Command\IPaperCut.cs" />
+    <Compile Include="Interfaces\Command\IPrintCommand.cs" />
+    <Compile Include="Interfaces\Command\IQrCode.cs" />
+    <Compile Include="Interfaces\Printer\IPrinter.cs" />
+    <Compile Include="Printer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RawPrinterHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ACESSO_DADOS\ACESSO_DADOS.csproj">
+      <Project>{0846D58E-3991-4076-9833-C4B4418E3F11}</Project>
+      <Name>ACESSO_DADOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OBJETO_TRANSFERENCIA\OBJETO_TRANSFERENCIA.csproj">
+      <Project>{8E55EDB2-AB90-4806-B074-7A2AF59CCB41}</Project>
+      <Name>OBJETO_TRANSFERENCIA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\REGRA_NEGOCIOS\REGRA_NEGOCIOS.csproj">
+      <Project>{4B6EEE40-490E-4E17-BBC7-21B3FBE11A41}</Project>
+      <Name>REGRA_NEGOCIOS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\ACESSO_DADOS.dll" />
+    <Content Include="bin\Debug\ACESSO_DADOS.pdb" />
+    <Content Include="bin\Debug\IMPRESSORA.dll" />
+    <Content Include="bin\Debug\IMPRESSORA.pdb" />
+    <Content Include="bin\Debug\OBJETO_TRANSFERENCIA.dll" />
+    <Content Include="bin\Debug\OBJETO_TRANSFERENCIA.pdb" />
+    <Content Include="bin\Debug\REGRA_NEGOCIOS.dll" />
+    <Content Include="bin\Debug\REGRA_NEGOCIOS.pdb" />
+    <Content Include="bin\Release\ACESSO_DADOS.dll" />
+    <Content Include="bin\Release\ACESSO_DADOS.pdb" />
+    <Content Include="bin\Release\IMPRESSORA.dll" />
+    <Content Include="bin\Release\IMPRESSORA.pdb" />
+    <Content Include="bin\Release\OBJETO_TRANSFERENCIA.dll" />
+    <Content Include="bin\Release\OBJETO_TRANSFERENCIA.pdb" />
+    <Content Include="bin\Release\REGRA_NEGOCIOS.dll" />
+    <Content Include="bin\Release\REGRA_NEGOCIOS.pdb" />
+    <Content Include="obj\Debug\IMPRESSORA.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\IMPRESSORA.dll" />
+    <Content Include="obj\Debug\IMPRESSORA.pdb" />
+    <Content Include="obj\Release\IMPRESSORA.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\IMPRESSORA.dll" />
+    <Content Include="obj\Release\IMPRESSORA.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\IMPRESSORA.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Release\IMPRESSORA.csprojResolveAssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="obj\Release\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
